@@ -4,7 +4,7 @@
 
 > **Nota importante**: Este documento se enfoca en aspectos técnicos y procedimientos. Para análisis comparativos, reflexiones personales y conclusiones, utiliza el archivo `CONCLUSIONES_EVALUACION.md`.
 
-**Autores**: [Nombre 1] y [Nombre 2]
+**Autores**: Daniel Ontavilla y José André
 **Fecha V0**: [Fecha de entrega inicial]
 **Fecha V1**: [Fecha de entrega final]
 
@@ -14,49 +14,64 @@
 
 ### Instalación y Verificación
 
-**Método de instalación:** [Especifica el método recomendado]
+**Método de instalación:** Desde la página oficial de Visual Studio Code:
+ https://code.visualstudio.com/ 
 
 > **💡 Sobre las imágenes**: Incluye capturas de pantalla para mostrar los diferentes pasos o resultados. Ejemplo: ![Descripción clara del contenido](screenshots/placeholder.png)`
 
 **Proceso de instalación:**
-- **Descarga:** [Describir el proceso]
-- **Opciones del instalador:** [Documentar las opciones que se consideraron importantes]
-- **Verificación:** [Cómo verificar que funciona]
+- **Descarga:** Acceder a la página de descarga y seleccionar la versión correspondiente al sistema operativo (Windows, macOS o Linux).
+Finalizar la instalación y ejecutar VS Code.
 
-*Es posible documentar múltiples métodos.*
+- **Opciones del instalador:** Ejecutar el instalador y mantener las opciones por defecto, marcando:
+
+“Agregar a PATH”
+“Registrar como editor de código soportado”
+
+- **Verificación:** Abrir la terminal integrada (`Ctrl+``) y ejecutar:
+
+code --version
+
+Si aparece el número de versión la instalación esta correcta
+
+
 
 ### Uso Básico de VS Code
 
 **Navegación y funcionalidades básicas:**
-- Navegación por la interfaz
-- Edición de código
-- Uso de la paleta de comandos
-- Gestión de archivos y carpetas
+
+Navegación por el panel lateral (Explorador, Buscar, Control de versiones, Depuración, Extensiones)
+Edición de código con soporte para resaltado de sintaxis y autocompletado
+Uso de la paleta de comandos (Ctrl+Shift+P)
+Administración de proyectos mediante carpetas
 
 ### Personalización del Entorno
 
-**Configuraciones aplicadas:** [Describir las personalizaciones que se realizaron]
+**Configuraciones aplicadas:** 
 
-*Ejemplos de configuraciones útiles (elegir las que se consideren relevantes):*
+se ha cambiado el tema por uno oscuro para no tener fatiga visual ademas de instalar el git 
 
 **Temas e iconos:**
-Ejemplos:
-- Material Theme, One Dark Pro
-- File Icon Theme para mejor identificación de archivos
+
+Temas: One Dark Pro, Material Theme
+
+Iconos: Material Icon Theme, VSCode Icons
 
 **Configuración de fuentes:**
-Ejemplos:
+
 - Fira Code, JetBrains Mono (con ligaduras)
 
 **Atajos de teclado útiles:**
-Ejemplos:
+
 - Ctrl+/ para comentar/descomentar
 - Ctrl+Shift+P para paleta de comandos
 - Ctrl+` para terminal integrada
 - Alt+↑/↓ para mover líneas
+- Control + K M para cambiar el idioma
+- Shift + Alt + , para corregir errores menores
 
 **Configuración del editor:**
-Ejemplos:
+
 - Formateo automático al guardar
 - Detección automática de indentación
 - Word wrap para líneas largas
