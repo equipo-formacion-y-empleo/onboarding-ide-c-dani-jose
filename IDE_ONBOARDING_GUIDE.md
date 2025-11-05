@@ -27,6 +27,7 @@ Finalizar la instalación y ejecutar VS Code.
 
 “Agregar a PATH”
 “Registrar como editor de código soportado”
+ (screenshots/Imagen1.png)
 
 - **Verificación:** Abrir la terminal integrada (`Ctrl+``) y ejecutar:
 
