@@ -72,7 +72,9 @@ Iconos: Material Icon Theme, VSCode Icons
 - Alt+↑/↓ para mover líneas
 - Control + K M para cambiar el idioma
 - Shift + Alt + , para corregir errores menores
+  
 ![Descripción clara del contenido](screenshots/Imagen4.png)
+
 **Configuración del editor:**
 
 - Formateo automático al guardar
