@@ -23,11 +23,13 @@
 - **Descarga:** Acceder a la página de descarga y seleccionar la versión correspondiente al sistema operativo (Windows, macOS o Linux).
 Finalizar la instalación y ejecutar VS Code.
 
+![Descripción clara del contenido](screenshots/Imagen2.png)
 - **Opciones del instalador:** Ejecutar el instalador y mantener las opciones por defecto, marcando:
 
 “Agregar a PATH”
 “Registrar como editor de código soportado”
- (screenshots/Imagen1.png)
+
+![Descripción clara del contenido](screenshots/Imagen1.png)
 
 - **Verificación:** Abrir la terminal integrada (`Ctrl+``) y ejecutar:
 
@@ -35,7 +37,7 @@ code --version
 
 Si aparece el número de versión la instalación esta correcta
 
-
+![Descripción clara del contenido](screenshots/Imagen3.png)
 
 ### Uso Básico de VS Code
 
@@ -70,7 +72,7 @@ Iconos: Material Icon Theme, VSCode Icons
 - Alt+↑/↓ para mover líneas
 - Control + K M para cambiar el idioma
 - Shift + Alt + , para corregir errores menores
-
+![Descripción clara del contenido](screenshots/Imagen4.png)
 **Configuración del editor:**
 
 - Formateo automático al guardar
