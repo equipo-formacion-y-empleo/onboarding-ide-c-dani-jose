@@ -92,6 +92,8 @@ Ejemplos:
 
 **Proceso de instalación:**
 1. **Descarga e instalación:** [Describir el proceso]
+   
+![Descripción clara del contenido] (screenshots/)
 2. **Verificación:** [Cómo comprobar que funciona]
 
 ### Configuración para C#
