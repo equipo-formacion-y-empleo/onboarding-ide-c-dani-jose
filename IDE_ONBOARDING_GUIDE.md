@@ -351,27 +351,33 @@ Si aparece el mensaje en la consola, la instalación y configuración del entorn
 **Configuraciones específicas aplicadas:**
 ```
 Configuración del intérprete:
-Seleccionamos el intérprete de Python mediante el comando Python: Select Interpreter (Ctrl + Shift + P) esto garantiza que el código se ejecute con la versión correcta de Python y las librerías instaladas.
+Seleccionamos el intérprete de Python mediante el comando Python: Select Interpreter (Ctrl + Shift + P) esto garantiza que el código se ejecute con la versión correcta de Python y las librerías instaladas
 ```
 ```
 Formato automático al guardar:
-Se activó la opción "editor.formatOnSave": true en el archivo settings.json. Esto permite que el código se formatee automáticamente según las reglas del formateador configurado (por ejemplo, autopep8 o black) cada vez que se guarda el archivo, manteniendo el código limpio y legible.
+Se activó la opción "editor.formatOnSave": true en el archivo settings.json. Esto permite que el código se formatee automáticamente según las reglas del formateador configurado (por ejemplo, autopep8 o black) cada vez que se guarda el archivo, manteniendo el código limpio y legible
+```
 ```
 Linting:
-Se habilitó el análisis estático de código para detectar errores y advertencias mientras se escribe. Por ejemplo, con "python.linting.enabled": true y el uso de linters como pylint o flake8. Esto ayuda a corregir errores antes de ejecutar el programa.
-
+Se habilitó el análisis estático de código para detectar errores y advertencias mientras se escribe.Esto ayuda a corregir errores antes de ejecutar el programa
+```
+```
 Depuración (Debugging):
-Se configuró el entorno de depuración creando un archivo launch.json con las opciones necesarias para ejecutar el programa paso a paso, manejar puntos de interrupción (breakpoints) y observar variables en tiempo real.
-
+Se configuró el entorno de depuración creando un archivo launch.json con las opciones necesarias para ejecutar el programa 
+```
+```
 Terminal integrada:
-Uso de la terminal interna de VS Code para ejecutar comandos, instalar paquetes con pip y ejecutar scripts sin salir del editor, lo que agiliza el flujo de trabajo.
-
+Uso de la terminal interna de VS Code para ejecutar comandos, instalar paquetes con pip y ejecutar scripts sin salir del editor
+```
+```
 Configuración de entornos virtuales:
-Se documentó el uso y activación de entornos virtuales para gestionar dependencias específicas de cada proyecto sin afectar al sistema global.
+Se documentó el uso y activación de entornos virtuales para gestionar dependencias específicas de cada proyecto sin afectar al sistema global
+```
+
 ### Proyecto de Ejemplo
 
 **Código desarrollado:**
-```[lenguaje]
+```[python]
 // Código de ejemplo aquí
 // Comentarios explicativos
 ```
