@@ -377,29 +377,107 @@ Se documentó el uso y activación de entornos virtuales para gestionar dependen
 ### Proyecto de Ejemplo
 
 **Código desarrollado:**
-```[python]
-// Código de ejemplo aquí
-// Comentarios explicativos
+```[C#]
+using System;
+
+class ProgramaSuma
+{
+    static void Main()
+    {
+        // Definimos la primera variable con un valor numérico
+        int numero1 = 5;
+
+        // Definimos la segunda variable con otro valor numérico
+        int numero2 = 3;
+
+        // Realizamos la suma de las dos variables y guardamos el resultado en una nueva variable
+        int resultado = numero1 + numero2;
+
+        // Mostramos el resultado en la consola con un mensaje 
+        Console.WriteLine("La suma de " + numero1 + " y " + numero2 + " es: " + resultado);
+
+        // Para que la consola espere una tecla antes de cerrarse
+        Console.ReadKey();
+    }
+}
+
+
 ```
 
 **Proceso de ejecución:**
-[Describir cómo ejecutar el código]
+
+con el comando Ctrl + F5 
 
 ---
 
 ## Configuraciones Recomendadas
 
 **Configuraciones generales:**
-[Documentar configuraciones que se consideran útiles para cualquier desarrollador]
+```
+Formato automático al guardar: "editor.formatOnSave": true para mantener el código limpio y consistente
+
+Indentación y tabulación: "editor.tabSize": 4 y "editor.insertSpaces": true para el espaciado
+
+Resaltado de sintaxis y tema: Seleccionar un tema cómodo para la vista (Dark+ o Light+) y habilitar resaltado de sintaxis para todos los lenguajes que uses
+
+Autoguardado: "files.autoSave": "afterDelay" para no perder cambios accidentalmente
+
+```
 
 **Herramientas adicionales:**
-[Extensions, herramientas CLI, o utilidades que se consideran beneficiosas]
+```
+Extensiones recomendadas:
+
+Python: soporte completo para desarrollo en Python
+
+C# (OmniSharp): para desarrollo con .NET y C#
+
+Java Extension Pack: soporte para proyectos Java
+```
+```
+Herramientas CLI útiles:
+
+pip (Python) y dotnet CLI (C#) para instalar paquetes y ejecutar proyectos desde terminal
+```
+```
+Utilidades extra:
+
+Terminal integrada de VS Code para ejecutar comandos sin salir del editor
+```
 
 **Solución de problemas comunes:**
-[Problemas frecuentes durante la configuración y sus soluciones]
+
+Hemos buscado en internet los errores comunes y sus soluciones:
+
+```
+Error al ejecutar Python:
+
+Asegurarse de seleccionar el intérprete correcto (Ctrl + Shift + P → Python: Select Interpreter)
+
+C# no reconoce dotnet o referencias:
+
+Verificar que el SDK de .NET esté instalado y agregado al PATH
+
+Extensiones no funcionan correctamente:
+
+Reiniciar VS Code y actualizar las extensiones a la versión más reciente.
+
+Problemas de linting o formateo:
+
+Comprobar que el linter o formateador esté instalado en el entorno (ej. pip install pylint para Python)
+```
 
 **Recursos útiles:**
-- Enlace [Enlace]: [Descripción]
-- Documentación [Documentación]: [Descripción]
+  Enlace [Visual Studio Code]: https://code.visualstudio.com/
+ – Página oficial de descarga e información sobre VS Code
+
+Documentación [Python]: https://docs.python.org/3/
+ – Documentación oficial y tutoriales de Python
+
+Documentación [C#]: https://learn.microsoft.com/dotnet/csharp/
+ – Guías y referencias oficiales de C#
+
+Documentación [Git]: https://git-scm.com/doc
+ – Guía completa para control de versiones con Git
 
 ---
