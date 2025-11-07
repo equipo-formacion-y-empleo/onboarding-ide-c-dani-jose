@@ -93,35 +93,48 @@ Ejemplos:
 **Proceso de instalación:**
 1. **Descarga e instalación:** [Describir el proceso]
    
-![Descripción clara del contenido] (screenshots/)
+![Descripción clara del contenido](screenshots/imagensdk1.png)
+    Primero nos tenemos que meter a la pagina de Microsoft para instalar SDK.net
+
+![Descripción clara del contenido](screenshots/imagensdk2.png)
+Seleccionamos la version NET 9.0 el de x64 
+
+![Descripción clara del contenido](screenshots/imagensdk3.png)
+Ejecutamos el archivo que nos descarga y nos aparecera esta ventana, le tendremos que dar a instalar y ya tendriamos instalados SDK.NET
+
 2. **Verificación:** [Cómo comprobar que funciona]
+   
+![Descripción clara del contenido](screenshots/comprobacionsdk.png)
+
+Para comprobar que se ha instalado correctamente nos metemos en la terminal y ejecutamos el comando dotnet --version y si te aparece lo que hay en la imagen (9.0.306 la version que instalaste) ya has comprobado que has instalado correctamente SDK.
 
 ### Configuración para C#
 
 **Extensiones esenciales:**
 - **Soporte oficial para C#**: Extensión que proporciona IntelliSense, debugging y compilación
+  .NET Install Tool: Ayuda a instalar y detectar automáticamente el SDK de .NET necesario para ejecutar y compilar programas C#.
 
+C# Dev Kit (opcional): Extensión que mejora la experiencia general de desarrollo, ofreciendo administración de proyectos y explorador de soluciones similar al de Visual Studio.
 
 **Configuraciones específicas para C#:** 
-[Describir las configuraciones que se aplicaron, como formateo automático, intellisense, o configuraciones del compilador]
+Se configuró el entorno para un formato de código automático, incluyendo la sangría, llaves y espaciados tambien se activó IntelliSense para obtener sugerencias de código y una mejor navegación y se verificaron las opciones del compilador
 
 **Debugging básico:**
-- Configuración de puntos de interrupción (breakpoints)
-- Ejecutar y depurar
-- Inspección de variables
 
-> **Enfoque práctico**: Concentra tu documentación en las funcionalidades básicas que usarás día a día.
+
+ 
+
+> **Enfoque práctico**: 
+> Se priorizó la configuración de las herramientas básicas necesarias para escribir, ejecutar y depurar programas de C# de manera eficiente en Visual Studio Code.
 
 ### Flujo de Trabajo con C#
 
 **Creación de proyectos:**
-[Documentar el proceso para crear proyectos C#]
+
 
 **Estructura de proyecto:**
-```csharp
-// Incluir aquí un ejemplo del código desarrollado
-// Comentarios sobre las decisiones tomadas
-```
+
+
 
 **Compilación y ejecución:**
 [Proceso para compilar y ejecutar proyectos]
@@ -137,18 +150,63 @@ Ejemplos:
 
 **Proceso de instalación:**
 - **Descarga:** [Versión recomendada - Community/Professional]
+
+![Descripción clara del contenido](screenshots/visualstudio1.png)
+Buscamos en nuestro navegador visual studio y la primera pagina que salga nos metemos, y tendremos que seleccionar la version gratuita 
+
+![Descripción clara del contenido](screenshots/visualstudio2.png)
+Descargamos la version community y ejecutamos el archivo
+  
 - **Componentes necesarios:** [Componentes específicos para C#]
+  
+![Descripción clara del contenido](screenshots/visualstudio3.png)
+Tenemos que seleccionar una carga de trabajo, la necesaria es la de desarrollo de escritorio .NET, marcamos el cuadro y le damos a instalar ya que nos instalara las herramientas de desarrollo
+
+
 - **Verificación:** [Cómo confirmar instalación correcta]
+
+![Descripción clara del contenido](screenshots/comprobacionvisual.png)
+
+Abrimos visual installer y nos mostrara la version que tenemos instalada
 
 ### Desarrollo con C#
 
 **Creación de proyecto:**
-[Describir el proceso para crear un proyecto C# en Visual Studio]
+ara crear un nuevo proyecto en Visual Studio:
+
+
+```
+Seleccionar “Crear un nuevo proyecto”.
+```
+![Descripción clara del contenido](screenshots/crearproyecto1.png)
+
+```
+Elegir la plantilla “Aplicación de Consola (.NET)” en C#.
+```
+![Descripción clara del contenido](screenshots/crearproyecto2.png)
+
+```
+Asignar un nombre y ubicación al proyecto.
+```
+![Descripción clara del contenido](screenshots/crearproyecto3.png)
+
+
+```
+Le damos a crear y se nos generara esto 
+```
+![Descripción clara del contenido](screenshots/crearproyecto4.png)
 
 **Flujo de trabajo básico:**
 - Compilación y ejecución
 - Uso de Solution Explorer
-- Debugging básico
+  
+- Debugging básico:
+  
+ Se añadieron puntos de interrupción (breakpoints) para detener la ejecución del programa en líneas específicas
+
+ Se usó la opción “Iniciar depuración” (F5) para ejecutar el código paso a paso
+
+ Se inspeccionaron variables durante la ejecución para verificar su contenido y corregir errores lógicos
 
 ---
 
