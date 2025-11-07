@@ -112,35 +112,81 @@ Para comprobar que se ha instalado correctamente nos metemos en la terminal y ej
 
 **Extensiones esenciales:**
 - **Soporte oficial para C#**: Extensión que proporciona IntelliSense, debugging y compilación
-  .NET Install Tool: Ayuda a instalar y detectar automáticamente el SDK de .NET necesario para ejecutar y compilar programas C#.
+  ```
+  .NET Install Tool: Ayuda a instalar y detectar automáticamente el SDK de .NET necesario para ejecutar y compilar programas C#
 
-C# Dev Kit (opcional): Extensión que mejora la experiencia general de desarrollo, ofreciendo administración de proyectos y explorador de soluciones similar al de Visual Studio.
+  C# Dev Kit (opcional): Extensión que mejora la experiencia general de desarrollo, ofreciendo administración de proyectos y explorador de soluciones similar al de Visual Studio
+    ``` 
+![Descripción clara del contenido](screenshots/extensionesvsc.png)
 
 **Configuraciones específicas para C#:** 
-Se configuró el entorno para un formato de código automático, incluyendo la sangría, llaves y espaciados tambien se activó IntelliSense para obtener sugerencias de código y una mejor navegación y se verificaron las opciones del compilador
+
+Formato automático del código al guardar (editor.formatOnSave: true)
+
+IntelliSense habilitado para obtener sugerencias de código en tiempo real
+
+Terminal integrada para ejecutar comandos de compilación y ejecución con dotnet run
+
+Selección del SDK de .NET correcto mediante el comando Ctrl+Shift+P → “Select .NET SDK version”
+
 
 **Debugging básico:**
 
+Se configuró el archivo launch.json para permitir la depuración con el depurador integrado de VS Code
 
+Se añadieron breakpoints (puntos de interrupción) haciendo clic a la izquierda de la línea de código
+
+Se ejecutó el programa en modo depuración con F5
+
+Se inspeccionaron variables, pila de llamadas y valores locales durante la ejecución
  
 
 > **Enfoque práctico**: 
-> Se priorizó la configuración de las herramientas básicas necesarias para escribir, ejecutar y depurar programas de C# de manera eficiente en Visual Studio Code.
+>Las configuraciones se centraron en lograr un entorno ágil, ligero y funcional para escribir, ejecutar y depurar programas en C# sin necesidad de usar Visual Studio completo.
 
 ### Flujo de Trabajo con C#
 
 **Creación de proyectos:**
 
+Abrir VS Code y abrir una carpeta vacía para el proyecto
+
+Abrir la terminal integrada (Ctrl+ñ) y ejecutar:
+![Descripción clara del contenido](screenshots/ejecutar.png)
+
+Abrir la carpeta del proyecto con Archivo → Abrir carpet.
+
+Esperar a que VS Code reconozca el proyecto y cargue las dependencias del SDK
 
 **Estructura de proyecto:**
+```
+using System;
 
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Hola, mundo (entornos desarrollo)");
+    }
+}
+// Este código imprime un mensaje en consola 
+```
 
 
 **Compilación y ejecución:**
-[Proceso para compilar y ejecutar proyectos]
+Para compilar y ejecutar, se usa la terminal integrada:
+
+dotnet run
+
+El comando compila el proyecto y ejecuta el programa mostrando la salida en la consola
 
 **Debugging:**
-[Configuración y uso de debugging]
+Ejecutar F5 para iniciar el modo de depuración
+
+Controlar la ejecución paso a paso con F10 (siguiente línea) o F11 (entrar en función)
+
+Observar las variables en la sección “Variables” del panel de depuración
+
+Detener la ejecución con Shift+F5 cuando sea necesario
 
 ---
 
@@ -172,7 +218,7 @@ Abrimos visual installer y nos mostrara la version que tenemos instalada
 ### Desarrollo con C#
 
 **Creación de proyecto:**
-ara crear un nuevo proyecto en Visual Studio:
+para crear un nuevo proyecto en Visual Studio:
 
 
 ```
@@ -198,27 +244,88 @@ Le damos a crear y se nos generara esto
 
 **Flujo de trabajo básico:**
 - Compilación y ejecución
+```
+Una vez configurado el código, se guarda el proyecto con Ctrl + S.
+
+En la barra superior, se selecciona Build → Build Solution (o se presiona Ctrl + Shift + B)
+
+Visual Studio compila el proyecto, mostrando los resultados en la ventana “Output” o “Error List”
+
+Si no hay errores, se genera un archivo ejecutable (.exe) en la carpeta bin/Debug o bin/Release
+ ```
+Ejecución del programa:
+```
+Para ejecutar el programa directamente desde el entorno, se presiona F5 (Ejecutar con depuración) o Ctrl + F5 (Ejecutar sin depuración)
+
+Visual Studio abrirá una consola (si es una aplicación de consola) y mostrará la salida del programa
+
+Si se presentan errores, el entorno indica la línea y el tipo de problema, permitiendo corregirlo fácilmente
+```
 - Uso de Solution Explorer
-  
+ ``` 
+Desde esta ventana se pueden:
+
+Crear, eliminar o renombrar archivos y carpetas dentro del proyecto
+
+Acceder fácilmente a las clases, formularios y recursos asociados
+
+Configurar las propiedades del proyecto, como el tipo de salida (consola, librería, etc.) o la versión de .NET utilizada
+
+Agregar referencias y paquetes NuGet necesarios para el desarrollo
+```
 - Debugging básico:
-  
+```
  Se añadieron puntos de interrupción (breakpoints) para detener la ejecución del programa en líneas específicas
 
  Se usó la opción “Iniciar depuración” (F5) para ejecutar el código paso a paso
 
  Se inspeccionaron variables durante la ejecución para verificar su contenido y corregir errores lógicos
-
+```
 ---
 
 ## Configuración de Lenguaje Adicional
 
-**Lenguaje seleccionado:** [Java/Python/Otro] - **Justificación:** [Por qué se eligió este lenguaje]
+**Lenguaje seleccionado:** [Python] 
+
+**Justificación:** 
+
+hemos eligido Python por su facilidad de uso, gran comunidad de soporte y su capacidad para adaptarse a distintos tipos de proyectos, desde los más simples hasta los más avanzados
 
 ### Instalación del Entorno
 
 **Runtime/SDK:**
-- **Descarga e instalación:** [Proceso paso a paso]
-- **Verificación:** [Cómo confirmar que funciona]
+- **Descarga e instalación:** 
+  
+  Abre visual studio installer:
+
+   ![Descripción clara del contenido](screenshots/python1.png)
+
+
+  dale a modificar para añadir Python:
+
+   ![Descripción clara del contenido](screenshots/python2.png)
+
+  Haz clic en Instalar y espera a que finalice el proceso.
+
+  Una vez completado, Visual Studio quedará listo para crear y ejecutar proyectos en Python
+
+- **Verificación:**
+  
+Abre Visual Studio y selecciona “Crear un nuevo proyecto”
+
+Elige la plantilla “Aplicación de consola de Python” y asigna un nombre al proyecto:
+
+![Descripción clara del contenido](screenshots/python3.png)
+
+```
+Escribe el siguiente código:
+
+ print("Instalación de Python en Visual Studio correcta")
+```
+
+Ejecuta el programa con Ctrl + F5.
+
+Si aparece el mensaje en la consola, la instalación y configuración del entorno se realizaron correctamente
 
 ### Configuración en VS Code
 
@@ -226,16 +333,41 @@ Le damos a crear y se nos generara esto
 
 *Para Java:*
 - **Paquete completo de Java**: Incluye compilación, debugging y gestión de proyectos
+  
+  
+![Descripción clara del contenido](screenshots/java1.png)
 
 *Para Python:*
 - **Soporte oficial de Python**: Extensión completa con intérprete y debugging
+  
+  ![Descripción clara del contenido](screenshots/python4.png)
 
 *Para otros lenguajes:*
-- Busca la extensión oficial del lenguaje que proporcione soporte completo
+- Busca la extensión oficial del lenguaje que proporcione soporte completo: C#
+  
+   ![Descripción clara del contenido](screenshots/devkit.png)
+
 
 **Configuraciones específicas aplicadas:**
-[Documentar los ajustes que se realizaron, como configuración del intérprete, formateo automático, linting, etc.]
+```
+Configuración del intérprete:
+Seleccionamos el intérprete de Python mediante el comando Python: Select Interpreter (Ctrl + Shift + P) esto garantiza que el código se ejecute con la versión correcta de Python y las librerías instaladas.
+```
+```
+Formato automático al guardar:
+Se activó la opción "editor.formatOnSave": true en el archivo settings.json. Esto permite que el código se formatee automáticamente según las reglas del formateador configurado (por ejemplo, autopep8 o black) cada vez que se guarda el archivo, manteniendo el código limpio y legible.
+```
+Linting:
+Se habilitó el análisis estático de código para detectar errores y advertencias mientras se escribe. Por ejemplo, con "python.linting.enabled": true y el uso de linters como pylint o flake8. Esto ayuda a corregir errores antes de ejecutar el programa.
 
+Depuración (Debugging):
+Se configuró el entorno de depuración creando un archivo launch.json con las opciones necesarias para ejecutar el programa paso a paso, manejar puntos de interrupción (breakpoints) y observar variables en tiempo real.
+
+Terminal integrada:
+Uso de la terminal interna de VS Code para ejecutar comandos, instalar paquetes con pip y ejecutar scripts sin salir del editor, lo que agiliza el flujo de trabajo.
+
+Configuración de entornos virtuales:
+Se documentó el uso y activación de entornos virtuales para gestionar dependencias específicas de cada proyecto sin afectar al sistema global.
 ### Proyecto de Ejemplo
 
 **Código desarrollado:**
